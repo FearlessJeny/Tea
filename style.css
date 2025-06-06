@@ -11,15 +11,15 @@ html {
 
 @font-face {
   font-family: kosugi-a ;
-  src: url(/font/ofont.ru_Unsightly.ttf);
+  src: url(font/ofont.ru_Unsightly.ttf);
 }
 @font-face {
   font-family: nato-c ;
-  src: url(/font/Konstanting.ttf);
+  src: url(font/Konstanting.ttf);
 }
 @font-face {
   font-family: rubik-c ;
-  src: url(/font/21028.ttf);
+  src: url(font/21028.ttf);
 }
 
 body {
@@ -152,7 +152,7 @@ body {
 }
 
 .parallax-1 {
-  background: url(/img/sencha1.webp) no-repeat;
+  background: url(img/sencha1.webp) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -183,35 +183,35 @@ body {
 }
 
 .parallax-2 {
-  background: url(/img/sencha2.webp) no-repeat;
+  background: url(img/sencha2.webp) no-repeat;
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
   padding: 12% 0;
 }
 .parallax-3 {
-  background: url(/img/sencha3.webp) no-repeat;
+  background: url(img/sencha3.webp) no-repeat;
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
   padding: 12% 0;
 }
 .parallax-4 {
-  background: url(/img/sencha4.webp) no-repeat;
+  background: url(img/sencha4.webp) no-repeat;
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
   padding: 12% 0;
 }
 .parallax-5 {
-  background: url(/img/sencha5.webp) no-repeat;
+  background: url(img/sencha5.webp) no-repeat;
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
   padding: 12% 0;
 }
 .parallax-6 {
-  background: url(/img/sencha6.webp) no-repeat;
+  background: url(img/sencha6.webp) no-repeat;
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
@@ -262,7 +262,7 @@ p {
 }
 
 .footer-bg {
-  background: url(/img/thunder1.webp) no-repeat  center center  ;
+  background: url(img/thunder1.webp) no-repeat  center center  ;
   background-size: cover;
   padding: 10px 0;
   text-align: center;
