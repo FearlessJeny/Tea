@@ -1,0 +1,448 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: kosugi-a ;
+  src: url(/font/ofont.ru_Unsightly.ttf);
+}
+@font-face {
+  font-family: nato-c ;
+  src: url(/font/Konstanting.ttf);
+}
+@font-face {
+  font-family: rubik-c ;
+  src: url(/font/21028.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f0f8f5;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, .1) ;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(255, 255, 255, .2);
+  z-index: 100;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+  transition: .5s;
+}
+
+.header:hover::before {
+  left: 100%;
+}
+
+.logo {
+  
+  width: 3%;
+  cursor: default;
+  box-shadow: 0 0 10px #14d103;
+  border-radius: 50%;
+  background-color: #aaffcc;
+}
+
+.navbar a {
+  color: #67ff01;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 35px;
+  transition: color .3s;
+}
+
+.navbar a:hover {
+  color: #aaffcc;
+}
+
+/* M E N U */
+#menu-icon {
+  font-size: 36px;
+  color: #aaffcc;
+  display: none;
+}
+
+
+
+.paran {
+  min-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  font-size: 4.5vw;
+  line-height: 1.6;
+  color: #333;
+}
+
+.paran p {
+  margin-bottom: 1.2rem;
+}
+
+
+.parallax-0 {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.parallax-0::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 0;
+}
+
+.parallax-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.parallax-inner {
+  
+  position: relative;
+  z-index: 1;
+  padding: 1rem;
+}
+
+.parallax-inner h1 {
+  font-size: 6vw;
+  font-family: kosugi-a;
+  color: #08be51;
+  text-shadow: 6px 8px 10px rgba(0, 0, 0, 1.35);
+  margin: 0;
+}
+
+.parallax-1 {
+  background: url(/img/sencha1.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 12% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.parallax-1 h2 {
+  font-size: 6vw;
+  font-family: nato-c;
+  color: #08be51;
+  text-shadow: 0 0 10px rgba(0, 0, 0, .7);
+  margin: 0;
+}
+
+.sencha-link {
+  display: block;
+  text-align: center;
+}
+
+.sencha-link h4 {
+  font-size: 5vw;
+  color: rgba(211, 31, 31, 0.959);
+  font-family: nato-c;
+}
+
+.parallax-2 {
+  background: url(/img/sencha2.webp) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  padding: 12% 0;
+}
+.parallax-3 {
+  background: url(/img/sencha3.webp) no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  padding: 12% 0;
+}
+.parallax-4 {
+  background: url(/img/sencha4.webp) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  padding: 12% 0;
+}
+.parallax-5 {
+  background: url(/img/sencha5.webp) no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  padding: 12% 0;
+}
+.parallax-6 {
+  background: url(/img/sencha6.webp) no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  padding: 12% 0;
+}
+
+
+
+.parallax-inner h2 {
+  font-size: 6rem;
+  font-family: nato-c;
+  color: #08be51;
+  text-shadow: 6px 8px  10px rgb(0, 0, 0);
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 5px;
+  margin: 20px 0 10px;
+}
+h4 {
+  font-size: 6rem;
+  font-family: nato-c;
+  color: #08be51;
+  text-shadow: 6px 8px  10px rgb(0, 0, 0);
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 5px;
+  margin: 20px 0 10px;
+}
+
+p {
+  font-family:  rubik-c;
+  font-size: 20px;
+  color: #000;
+  text-align: justify;
+  margin: 0 50px 40px;
+  padding-left: 10px;
+  padding-top: 30px;
+}
+
+
+/* footer */
+.footer {
+  padding-top: 32px;
+}
+
+.footer-container {
+  row-gap: 56px;
+}
+
+.footer-bg {
+  background: url(/img/thunder1.webp) no-repeat  center center  ;
+  background-size: cover;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer-title {
+  font-size: 35px;
+  color: rgb(21, 255, 0);
+}
+
+.footer-copy {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* scroll top button */
+.scroll-top {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: inset 2px 4px 6px 2px rgba(163, 163, 204, 100.2);
+  z-index: 100;
+  transition: all 1.5s ease-in-out;
+cursor: pointer;
+opacity: 0;
+visibility: hidden;
+transform: translateY(-100vh) rotate(180deg);
+}
+
+.scroll-top i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: rgb(81, 255, 1);
+  animation: sparkle 1s infinite ease-in-out;
+}
+
+@keyframes sparkle {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    color: rgb(43, 255, 1);
+    text-shadow: 0 0 5px rgba(32, 252, 3, 0.4);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.5;
+    color: rgb(255, 0, 0);
+    text-shadow: 0 0 10px rgb(0, 255, 76);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    color: rgb(115, 255, 1);
+    text-shadow: 0 0 5px rgba(255,255,100,0.4);
+  }
+}
+
+.scroll-top svg path {
+  fill: none;
+  stroke: rgb(115, 255, 0);
+  stroke-width: 4;
+  transition: stroke .3 ease-in-out;
+}
+
+.scroll-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
+
+
+
+/* Media */
+
+@media (max-width: 992px) {
+  .header {
+    padding: 1.25rem 4%;
+  }
+}
+
+@media (max-width: 768px) {
+#menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 5rem 4%;
+    
+    display: none;
+  }
+  .navbar a {
+    display: block;
+    margin: 1.5rem 0;
+  }
+}
+
+@media (max-width: 568px) {
+  h4 {
+    font-size: 3.5rem;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: fixed;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    padding: .5rem 4%;
+    display: none;
+  }
+  .navbar.active {
+    display: block;
+  }
+  .navbar a {
+    display: block;
+    margin: 1.5rem 0;
+    /* color: rgb(180, 184, 226); */
+  }
+  .nav-bg {
+    position: fixed;
+    top: 8.8%;
+    left: 0;
+    width: 100%;
+    height: 395px;
+    background: #0a030383;
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    z-index: 99;
+    display: none;
+  }
+
+  .nav-bg.active {
+    display: block;
+  }
+
+  p {
+    font-size: 16px;
+    padding-left: 5px;
+    padding-top: 20px;
+  }
+
+  section {
+    width: 100%;
+    padding: 0;
+  }
+
+  .parallax-video {
+    width: 150vw;
+    height: 100vw;
+  }
+
+  .parallax-0 {
+    height: 25vh;
+    padding: 45% 0;
+  }
+
+
+  .parallax-1,
+  .parallax-2,
+  .parallax-3,
+  .parallax-4,
+  .parallax-5,
+  .parallax-6 {
+    padding: 80% 0;
+  }
+}
